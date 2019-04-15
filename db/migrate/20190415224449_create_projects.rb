@@ -4,8 +4,8 @@ class CreateProjects < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :description
       t.string :media
-      t.string :duedate
-      t.string :searchtag
+      t.string :due_date
+      t.string :search_tag
       t.references :user, foreign_key: true
     end
   end
