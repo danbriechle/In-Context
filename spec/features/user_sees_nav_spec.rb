@@ -6,7 +6,7 @@ describe 'as a user' do
       user_1 = User.create!(name: "Dan Briechle")
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user_1)
 
-      visit dashboard_path
+      visit "/"
       expect(page).to have_button("Projects")
       expect(page).to have_button("Search")
       expect(page).to have_field("q")
