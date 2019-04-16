@@ -8,7 +8,7 @@ describe 'as a user' do
 
       visit "/"
       
-      expect(page).to have_link("Projects")
+      expect(page).to have_link("My Projects")
       expect(page).to have_button("Search")
     end
   end
