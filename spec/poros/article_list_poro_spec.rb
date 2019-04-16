@@ -2,7 +2,14 @@ RSpec.describe ArticleList, type: :poro do
   describe "Class Methods" do
     describe ".add_article" do
       it "can have articles added to it" do
-        list = ArticleList.new
+        articlelist_1 = ArticleList.new
+        user_1 = User.create!(name: "Dan Briechle")
+        project_1 = Project.create!(title: "Look at how much this cost",
+                                    description: "Rural america from the outsider's perspective",
+                                    media: "mixed",
+                                    due_date: "Feb 6th",
+                                    search_tag: "rural america",
+                                    user: user_1)
         article_1 = Article.create!(title: "Getting Real About Rural America",
                                     authors: "PAUL KRUGMAN",
                                     source: "The New York Times",
@@ -26,11 +33,12 @@ RSpec.describe ArticleList, type: :poro do
                                     and cultural landscape.Since then, however, while Americas population has doubled,
                                     the number o… ")
 
-        list.add_article(article_1)
-        expect(list[0][:title]).to eq("Getting Real About Rural America")
-        list.add_article(article_2)
-        expect(list[1][:title]).to eq("What Rural America Has to Teach Us")
-        expect(list.count).to eq(2)
+        articlelist_1.add_article(article_1)
+
+        expect(articlelist_1.list[0][:title]).to eq("Getting Real About Rural America")
+        articlelist_1.add_article(article_2)
+        expect(articlelist_1.list[1][:title]).to eq("What Rural America Has to Teach Us")
+        expect(articlelist_1.list.count).to eq(2)
       end
     end
   end
