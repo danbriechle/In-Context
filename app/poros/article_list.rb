@@ -6,7 +6,7 @@ class ArticleList
   end
 
   def self.current_user_search_tags
-    @current_user ||= User.last.projects.map do |project|
+    @current_user ||= User.first.projects.map do |project|
       project[:search_tag]
     end
   end
