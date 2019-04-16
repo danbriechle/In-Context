@@ -1,4 +1,10 @@
 <%= render "layouts/nav" %>
-<% @new_content.each do |article| %>
-<%= article[:title] %>
-<% end %>
+<div><h1> Todays Stories</h1></div>
+<section>
+  <% @new_content.each do |article| %>
+  <div id="card">
+    <img src=<%=article[:urlToImage]%>>
+    <div>Title: <br>"<%= article[:title] %>"</div>
+  </div>
+  <% end %>
+</section>

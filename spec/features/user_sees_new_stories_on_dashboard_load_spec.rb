@@ -13,11 +13,11 @@ describe 'as a user' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user_1)
 
       visit "/"
-      save_and_open_page
 
-      # within ".Article-#{id}" do
-      # expect(page).to have_content("Title")
-      # end
+
+      within first("#card") do
+      expect(page).to have_content("Title")
+      end
     end
   end
 end
