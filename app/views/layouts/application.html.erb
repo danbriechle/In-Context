@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <nav>
+      <div><%= link_to "Projects" %></div>
+      <div class="search-box">
+      <input type="string" id="search-input"></input>
+      <button id="search-button">Search</button>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

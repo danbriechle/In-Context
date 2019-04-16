@@ -7,9 +7,9 @@ describe 'as a user' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user_1)
 
       visit "/"
-      expect(page).to have_button("Projects")
+      
+      expect(page).to have_link("Projects")
       expect(page).to have_button("Search")
-      expect(page).to have_field("q")
     end
   end
 end
