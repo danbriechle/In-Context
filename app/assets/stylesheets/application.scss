@@ -16,9 +16,14 @@
  body{
    font-family: "Courier New", courier;
    background-image: image-url('Venice.jpg');
+   background-color: white;
    background-size: cover;
    background-repeat: no-repeat;
    margin: auto;
+   font-size: 12px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
   }
 
  h1{
@@ -33,7 +38,6 @@
    margin: 15px;
    height: 60px;
    background-color: white;
-   opacity: 30%;
    opacity: 0.7;
    border-radius: 3px;
    display: flex;
@@ -72,4 +76,32 @@
   font-weight: bold;
   background-color: #1e74ff;
   color: white;
+}
+section{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+
+#card{
+  width: 250px;
+  height: 500px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 10px;
+  background-color: white;
+  font-size: 18px;
+  overflow-wrap: break-word;
+  opacity: 0.7;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+img{
+   width: 240px;
+   height: 110px;
 }
