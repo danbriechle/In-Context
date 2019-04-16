@@ -3,20 +3,12 @@
   <head>
     <title>InContext</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    <%= csp_meta_tag %> 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
-    <nav>
-      <div><%= link_to "Projects" %></div>
-      <div class="search-box">
-      <input type="string" id="search-input"></input>
-      <button id="search-button">Search</button>
-      </div>
-    </nav>
     <%= yield %>
   </body>
 </html>
