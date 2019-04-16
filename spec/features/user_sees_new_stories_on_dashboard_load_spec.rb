@@ -14,7 +14,8 @@ describe 'as a user' do
 
       visit "/"
 
-      within ".Article-1" do
+      id = ArticleList.first.id
+      within ".Article-#{id}" do
       expect(page).to have_content("Title")
       end
     end
