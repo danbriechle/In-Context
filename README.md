@@ -1,9 +1,9 @@
-# README
+# In Context 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## "Theres something quite special about impressionists painting fields of flowers at the dawn of the industrial revolution."
 
-Things you may want to cover:
+In Context is a ruby on rails app that helps artists, creatives and others search and organize news content relevant to their
+projects. The creative process is a direct response to the world around us. Keep your intent focused with In Context. 
 
 * Ruby version
 
