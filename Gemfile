@@ -17,8 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 gem 'figaro'
 gem 'faraday'
-gem 'faraday_middleware'
-gem 'multi_xml'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
