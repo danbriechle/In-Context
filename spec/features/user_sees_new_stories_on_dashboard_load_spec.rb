@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'as a user' do
   context 'when i visit my dahsboard' do
-    it 'sees 10 prepopulated articles based upon my search tags' do
+    xit 'sees 10 prepopulated articles based upon my search tags' do
       user_1 = User.create!(name: "Dan Briechle")
       project_1 = Project.create!(title: "Look at how much this cost",
                                   description: "Rural america from the outsider's perspective",
