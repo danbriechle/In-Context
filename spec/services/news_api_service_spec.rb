@@ -5,6 +5,7 @@ describe 'News API ' do
     search_term = "Fast Fashion"
     response = NewsApiService.stories(search_term)
     keys = [:source, :author, :title, :description, :url, :urlToImage, :publishedAt, :content]
-    expect(response[:articles][0].keys).to eq(keys)
+    expect(response[0].keys).to eq(keys)
+    expect(response.count).to eq(5)
   end
 end

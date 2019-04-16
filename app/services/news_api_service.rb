@@ -4,7 +4,7 @@ class NewsApiService
   end
 
   def self.stories(search_term)
-    get_json(search_term)
+    get_json(search_term)[:articles].take(5)
   end
 
   private
