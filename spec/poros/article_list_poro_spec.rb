@@ -55,7 +55,7 @@ RSpec.describe ArticleList, type: :poro do
 
         articlelist_1.update
 
-        expect(articlelist_1.list.count).to eq(5)
+        expect(articlelist_1.list[0].count).to eq(5)
       end
     end
   end
