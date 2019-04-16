@@ -1,8 +1,11 @@
 language: ruby
 rvm:
-- 2.4.5
+- 2.4.1
 before_install:
 - gem update --system
 - gem install bundler
 before_script:
 - psql -c 'create database travis_ci_test;' -U postgres
+env:
+  global:
+    secure: WL2OEE08KY43UyRNoVncFG5BvCj01wJMCyNp6eE7q6qn2mHSdAChugFImT3u3qr7f86dlzIaryZyfOndaI4aI4zmwpMwIg4xE4/ygb3ypVz2ky9Ba9AhHT3rItd74mP9pzuqRlt72dNF+fydGZsbgFZYtusj4m0OLjAye+Fyhdm8JkR4Kkq2yDJ4F+jAinYZbLzrYroT31cwSFDgABHYzMFkl8vX48iP4nCiawNuXTM3DOneYHCevlQC9iFy760pLwijIM4bMu79I+Kn1g0zvzoLiSEreyYzLlYVc/m1ZjfHK8Bexspr+oF64JQiBoYh8GU/ov0cazwIiRNLjsO5rGhoOYD6yPF80dLw9Nzp4j5LxKPHPL/U3XrXjS4B5HVfE34hkwMpNZ7OPCnkoOUuqaRNZ5HSj3ajFjbgdukyCzv9x45ue8dPZhwg0ftEocZgkT5DGV26pV/RaPzMzvl8QpbeHWd6Ux+tM/dFL96keTP+aftHGUnVvN9j9jpfnJ9qb2F1Uq1+i85exksOThclrwypNbGctc5ik6B+W9gt1oXfEjj4nMbOALyOpJd0dP5cLFIOOMD62cTDyrBlNnwlL6UmE0pPTuqIeficbOXylQ9hRthM5NjRlqyzlNwKTqYEKcJPSnTNnkJdKQIQ5dyDqDWzSNqOO2Xq+WXPTbkoTPo=
