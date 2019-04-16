@@ -1,1 +1,4 @@
 <%= render "layouts/nav" %>
+<% @new_content.each do |article| %>
+<%= article[:title] %>
+<% end %>

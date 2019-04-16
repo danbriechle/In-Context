@@ -1,5 +1,4 @@
 class ArticleList
-
   def self.update
     current_user_search_tags.map do |tag|
       NewsApiService.stories(tag)
@@ -11,5 +10,4 @@ class ArticleList
       project[:search_tag]
     end
   end
-
 end
